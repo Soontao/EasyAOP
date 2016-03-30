@@ -1,5 +1,6 @@
 # EasyAOP
 * 基于CGLib的Java面向切面框架
+
 ### 使用方法
 * 创建一个继承于Aspect的类
 <BLOCKQUOTE>简单的继承方式是覆盖before,doSlicedMethod和after方法
@@ -18,6 +19,7 @@ targetAspectClass 的 value必须继承于Aspect
 * 通过EasyAOP.getProxy()获取原类的代理
 <BLOCKQUOTE>每次获取的代理都会是一个新的对象</BLOCKQUOTE>
 * Use it
+
 ### 内部实现
 * CGLib是一个字节码生成框架,依赖于它可以实现针对所有Class的(动态)代理
 * 调用原方法代理的时候,将会运行该方法对应Aspect的aspectRun
